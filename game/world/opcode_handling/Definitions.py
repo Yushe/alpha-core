@@ -96,6 +96,7 @@ from game.world.opcode_handling.handlers.player.RandomRollHandler import RandomR
 from game.world.opcode_handling.handlers.player.RepopRequestHandler import RepopRequestHandler
 from game.world.opcode_handling.handlers.player.SetWeaponModeHandler import SetWeaponModeHandler
 from game.world.opcode_handling.handlers.player.StandStateChangeHandler import StandStateChangeHandler
+from game.world.opcode_handling.handlers.player.cheats.CreateItemHandler import CreateItemHandler
 from game.world.opcode_handling.handlers.player.cheats.GodModeHandler import GodModeHandler
 from game.world.opcode_handling.handlers.player.cheats.SpeedCheatHandler import SpeedCheatHandler
 from game.world.opcode_handling.handlers.player.cheats.CheatSetMoneyHandler import CheatSetMoneyHandler
@@ -292,6 +293,7 @@ HANDLER_DEFINITIONS = {
     OpCode.MSG_RANDOM_ROLL: RandomRollHandler.handle,
     OpCode.CMSG_DUEL_ACCEPTED: DuelAcceptHandler.handle,
     OpCode.CMSG_DUEL_CANCELLED: DuelCanceledHandler.handle,
+    OpCode.CMSG_CREATEITEM: CreateItemHandler.handle,
     OpCode.CMSG_TRIGGER_CINEMATIC_CHEAT: TriggerCinematicCheatHandler.handle,
     OpCode.CMSG_GODMODE: GodModeHandler.handle,
     OpCode.CMSG_CHEAT_SETMONEY: CheatSetMoneyHandler.handle,
